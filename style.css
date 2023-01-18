@@ -1,0 +1,67 @@
+@Import Url('Https://Fonts.Googleapis.Com/Css?Family=Roboto:100');
+
+Body {
+  Margin:0px;
+  Font-Family:'roboto';
+  Text-Align:center;
+  background-color: #5a7752;
+}
+
+#Container {
+  Color:rgb(196, 0, 29);
+  Text-Transform: Uppercase;
+  Font-Size:36px;
+  Font-Weight:bold;
+  Padding-Top:200px;  
+  Position:fixed;
+  Width:100%;
+  Bottom:45%;
+  Display:block;
+}
+
+#Flip {
+  Height:50px;
+  Overflow:hidden;
+}
+
+#Flip > Div > Div {
+  Color:white;
+  Padding:4px 12px;
+  Height:45px;
+  Margin-Bottom:45px;
+  Display:inline-Block;
+}
+
+#Flip Div:first-Child {
+  Animation: Show 2s Linear Infinite;
+}
+
+#Flip Div Div {
+  Background:#40e20e;
+}
+#Flip Div:first-Child Div {
+  Background:#0b007e;
+}
+#Flip Div:last-Child Div {
+  Background:#620215;
+}
+
+@keyframes Show {
+  0% {Margin-Top:-270px;}
+  5% {Margin-Top:-180px;}
+  33% {Margin-Top:-180px;}
+  38% {Margin-Top:-90px;}
+  66% {Margin-Top:-90px;}
+  71% {Margin-Top:0px;}
+  99.99% {Margin-Top:0px;}
+  100% {Margin-Top:-270px;}
+}
+
+P {
+   Position:fixed;
+   Width:100%;
+   Bottom:30px;
+   Font-Size:12px;
+   Color:black ;
+   Margin-Top:200px;
+ }
